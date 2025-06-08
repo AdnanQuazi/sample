@@ -2,7 +2,6 @@ import { z } from "zod";
 import { baseProcedure, createTRPCRouter, protectedProcedure } from "../init";
 import { streamGeminiResponse } from "@/gemini";
 import { TRPCError } from "@trpc/server";
-import { privateDecrypt } from "crypto";
 import { generateGeminiImage } from "@/geminiForImage";
 import { v4 as uuidv4 } from 'uuid';
 import { base64ToBlob } from "@/app/utils/utils";

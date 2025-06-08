@@ -1,16 +1,16 @@
 import { trpc } from "@/trpc/client";
-import { CurrentPrompt, Message } from "../types/chat";
+import { CurrentPrompt } from "../types/chat";
 
 interface UseChatSubscriptionProps {
   currentPrompt: CurrentPrompt | null;
   updateLastMessage: (chunk: string) => void;
-  setMessages: React.Dispatch<React.SetStateAction<Message[]>>;
+  setMessages: React.Dispatch<React.SetStateAction<any[]>>;
   setIsLoading: (loading: boolean) => void;
   setCurrentPrompt: (prompt: CurrentPrompt | null) => void;
   inputRef: React.RefObject<HTMLInputElement>;
   currentMessageRef: React.MutableRefObject<string>;
   chatId: string | null;
-  storeMessageMutation: ReturnType<typeof trpc.storeMessagePair.useMutation>;
+  storeMessageMutation: any;
   refetch: () => void;
 }
 
