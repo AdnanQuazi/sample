@@ -24,3 +24,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.truncate-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE 10+ */
+  scrollbar-width: none;     /* Firefox */
+}
+.pb-6 {
+  padding-bottom: 64px;
+}
+.bg-dark-custom {
+  background-color: #252525 !important; /* or any dark shade */
+}
+
+.text-red-custom {
+  color: #ff6b6b !important; /* pastel red */
+}
+.text-red-custom:hover {
+  background-color: #ff6b6b38 !important; /* soft hover effect */
+}
