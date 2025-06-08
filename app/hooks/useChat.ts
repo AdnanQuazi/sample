@@ -59,7 +59,7 @@ export const useChat = () => {
         console.log("ChatId", chatId);
         if (prompt && response && chatId) {
           try {
-            const result = await storeMessageMutation.mutateAsync({
+            await storeMessageMutation.mutateAsync({
               chat_id: chatId,
               prompt,
               response,
